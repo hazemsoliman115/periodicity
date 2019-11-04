@@ -31,7 +31,6 @@ plt.plot(time, time_data)
 plt.title('Time Domain Signal')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
-plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/periodic_signal.png")
 plt.show()
 
 # frequency domain
@@ -45,7 +44,6 @@ plt.plot(frequency, freq_mag)
 plt.title('Frequency domain Signal')
 plt.xlabel('Frequency in Hz')
 plt.ylabel('Amplitude')
-plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/periodic_Spectrum.png")
 plt.show()
 
 # plot histogram
@@ -65,5 +63,4 @@ plt.title('Frequency domain Signal Histogram')
 plt.xlabel('Frequency in Hz')
 plt.ylabel('Probability')
 plt.ylim([0, 1])
-plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/periodic_signal_histogram.png")
 plt.show()
