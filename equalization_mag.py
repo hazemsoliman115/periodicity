@@ -38,6 +38,7 @@ plt.plot(time, time_data)
 plt.title('Time Domain Signal Double Magnitude')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noise_Double.png")
 plt.show()
 
 # frequency domain
@@ -51,6 +52,7 @@ plt.plot(frequency, freq_mag)
 plt.title('Frequency domain Signal Double Magnitude')
 plt.xlabel('Frequency in Hz')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noisy_Spectrum_Double.png")
 plt.show()
 
 
@@ -71,6 +73,7 @@ plt.plot(time, time_data)
 plt.title('Time Domain Signal 100x Magnitude')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noise_100x.png")
 plt.show()
 
 # frequency domain
@@ -84,6 +87,7 @@ plt.plot(frequency, freq_mag)
 plt.title('Frequency domain Signal 100x Magnitude')
 plt.xlabel('Frequency in Hz')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noisy_Spectrum_100x.png")
 plt.show()
 
 
@@ -104,6 +108,7 @@ plt.plot(time, time_data)
 plt.title('Time Domain Signal 100x Magnitude Equalized')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noise_100x_Equalized.png")
 plt.show()
 
 # frequency domain
@@ -117,5 +122,6 @@ plt.plot(frequency, freq_mag)
 plt.title('Frequency domain Signal 100x Magnitude Equalized')
 plt.xlabel('Frequency in Hz')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noisy_Spectrum_100x_Equalized.png")
 plt.show()
 

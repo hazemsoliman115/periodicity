@@ -37,6 +37,7 @@ plt.plot(time, time_data)
 plt.title('Time Domain Signal 2 Noise Source')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noise_2.png")
 plt.show()
 
 # frequency domain
@@ -50,6 +51,7 @@ plt.plot(frequency, freq_mag)
 plt.title('Frequency domain Signal 2 Noise Source')
 plt.xlabel('Frequency in Hz')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noisy_Spectrum_2.png")
 plt.show()
 
 
@@ -71,6 +73,7 @@ plt.plot(time, time_data)
 plt.title('Time Domain Signal 20 Noise Source')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noise_20.png")
 plt.show()
 
 # frequency domain
@@ -84,6 +87,7 @@ plt.plot(frequency, freq_mag)
 plt.title('Frequency domain Signal 20 Noise Source')
 plt.xlabel('Frequency in Hz')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noisy_Spectrum_20.png")
 plt.show()
 
 
@@ -105,6 +109,7 @@ plt.plot(time, time_data)
 plt.title('Time Domain Signal 200 Noise Source')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noise_200.png")
 plt.show()
 
 # frequency domain
@@ -118,4 +123,5 @@ plt.plot(frequency, freq_mag)
 plt.title('Frequency domain Signal 200 Noise Source')
 plt.xlabel('Frequency in Hz')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noisy_Spectrum_200.png")
 plt.show()

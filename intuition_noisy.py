@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import pi
 from scipy.fftpack import fft
-from scipy.stats import norm
+from scipy.stats import gamma
 import matplotlib.mlab as mlab
 
 # parameters
@@ -30,6 +30,7 @@ plt.plot(time, time_data)
 plt.title('Time Domain Signal')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noisy_signal.png")
 plt.show()
 
 # frequency domain
@@ -43,20 +44,24 @@ plt.plot(frequency, freq_mag)
 plt.title('Frequency domain Signal')
 plt.xlabel('Frequency in Hz')
 plt.ylabel('Amplitude')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noisy_Spectrum.png")
 plt.show()
 
 # plot histogram
 plt.figure(figsize=(17, 8))
 
 # best fit of data
-(mu, sigma) = norm.fit(freq_mag)
+# (mu, sigma) = norm.fit(freq_mag)
+fit_alpha, fit_loc, scale = gamma.fit(freq_mag)
 # the histogram of the data
 n, bins, patches = plt.hist(freq_mag, bins=30, density=True, facecolor='green', alpha=0.75)
 # add a 'best fit' line
-y = mlab.normpdf(bins, mu, sigma)
-l = plt.plot(bins, y, 'r--', linewidth=2)
+# y = mlab.normpdf(bins, mu, sigma)
+y = gamma.pdf(bins, a=fit_alpha, loc=fit_loc, scale=scale)
+plt.plot(bins, y, 'r--', linewidth=2)
 
 plt.title('Frequency domain Signal Histogram')
 plt.xlabel('Frequency in Hz')
 plt.ylabel('Probability')
+plt.savefig("C:/Users/hazem/Dropbox/RANK-Dev/ML/periodicity_Talk_Material/plots/noisy_signal_histogram.png")
 plt.show()
