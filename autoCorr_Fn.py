@@ -63,7 +63,7 @@ y = gamma.pdf(bins, a=fit_alpha, loc=fit_loc, scale=scale)
 plt.plot(bins, y, 'r--', linewidth=2)
 
 plt.title('Frequency domain Signal Histogram')
-plt.xlabel('Frequency in Hz')
+plt.xlabel('Fourier Amplitude')
 plt.ylabel('Probability')
 plt.show()
 
